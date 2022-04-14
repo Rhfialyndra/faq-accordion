@@ -1,16 +1,64 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+@taiwlind base;
+@taiwlind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    margin : 0 auto;
+    background-image : linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(240, 6%, 50%);
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@media (min-width : 1024px) {
+.modal {
+
+    background : url("/images/illustration-woman-online-desktop.svg") -90px 50px no-repeat,  url("/images/bg-pattern-desktop.svg") -580px 75% no-repeat;
+    background-color : white;
+
 }
 
-* {
-  box-sizing: border-box;
+}
+
+@media(max-width : 1023px){
+
+    .modal {
+
+        background :  url("/images/bg-pattern-mobile.svg") 50% 0px no-repeat;
+        background-color : white;
+    
+    }
+
+}
+
+.border-bottom {
+
+    border-bottom : 1px solid #C6CAC8;
+
+}
+
+.active {
+    transform : rotate(-180deg);
+}
+
+
+.dark-blue {
+
+    color : hsl(238, 29%, 16%);
+
+}
+
+.light-red:hover {
+
+    color : hsl(14, 88%, 65%);
+}
+
+.dark-gray {
+
+    color : hsl(240, 6%, 50%);
+
 }
